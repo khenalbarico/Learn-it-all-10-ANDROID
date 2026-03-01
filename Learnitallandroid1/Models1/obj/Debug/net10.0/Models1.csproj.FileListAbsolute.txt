@@ -1,0 +1,12 @@
+C:\Users\Albarico\source\repos\Learn-it-all-10-ANDROID\Learnitallandroid1\Models1\bin\Debug\net10.0\Models1.deps.json
+C:\Users\Albarico\source\repos\Learn-it-all-10-ANDROID\Learnitallandroid1\Models1\bin\Debug\net10.0\Models1.dll
+C:\Users\Albarico\source\repos\Learn-it-all-10-ANDROID\Learnitallandroid1\Models1\bin\Debug\net10.0\Models1.pdb
+C:\Users\Albarico\source\repos\Learn-it-all-10-ANDROID\Learnitallandroid1\Models1\obj\Debug\net10.0\Models1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Albarico\source\repos\Learn-it-all-10-ANDROID\Learnitallandroid1\Models1\obj\Debug\net10.0\Models1.AssemblyInfoInputs.cache
+C:\Users\Albarico\source\repos\Learn-it-all-10-ANDROID\Learnitallandroid1\Models1\obj\Debug\net10.0\Models1.AssemblyInfo.cs
+C:\Users\Albarico\source\repos\Learn-it-all-10-ANDROID\Learnitallandroid1\Models1\obj\Debug\net10.0\Models1.csproj.CoreCompileInputs.cache
+C:\Users\Albarico\source\repos\Learn-it-all-10-ANDROID\Learnitallandroid1\Models1\obj\Debug\net10.0\Models1.sourcelink.json
+C:\Users\Albarico\source\repos\Learn-it-all-10-ANDROID\Learnitallandroid1\Models1\obj\Debug\net10.0\Models1.dll
+C:\Users\Albarico\source\repos\Learn-it-all-10-ANDROID\Learnitallandroid1\Models1\obj\Debug\net10.0\refint\Models1.dll
+C:\Users\Albarico\source\repos\Learn-it-all-10-ANDROID\Learnitallandroid1\Models1\obj\Debug\net10.0\Models1.pdb
+C:\Users\Albarico\source\repos\Learn-it-all-10-ANDROID\Learnitallandroid1\Models1\obj\Debug\net10.0\ref\Models1.dll

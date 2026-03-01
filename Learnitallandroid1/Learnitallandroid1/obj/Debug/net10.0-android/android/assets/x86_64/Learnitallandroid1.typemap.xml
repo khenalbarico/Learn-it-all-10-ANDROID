@@ -1,0 +1,10 @@
+<api type="debug" assembly-name="Learnitallandroid1" mvid="1c6d54f4e1034e1181e8ffec7488b1fa">
+  <java-to-managed>
+    <entry java-name="crc6434c6a3ebd094025a/MainActivity" managed-name="Learnitallandroid1.MainActivity, Learnitallandroid1" managed-type-token-id="33554441" />
+    <entry java-name="crc6434c6a3ebd094025a/MainApplication" managed-name="Learnitallandroid1.MainApplication, Learnitallandroid1" managed-type-token-id="33554442" />
+  </java-to-managed>
+  <managed-to-java>
+    <entry java-name="crc6434c6a3ebd094025a/MainActivity" managed-name="Learnitallandroid1.MainActivity, Learnitallandroid1" managed-type-token-id="33554441" />
+    <entry java-name="crc6434c6a3ebd094025a/MainApplication" managed-name="Learnitallandroid1.MainApplication, Learnitallandroid1" managed-type-token-id="33554442" />
+  </managed-to-java>
+</api>

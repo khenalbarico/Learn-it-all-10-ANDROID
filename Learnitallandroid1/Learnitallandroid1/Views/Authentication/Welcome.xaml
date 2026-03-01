@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:views="clr-namespace:Learnitallandroid1.Views"
+    x:Class="Learnitallandroid1.Views.Authentication.Welcome"
+    Shell.NavBarIsVisible="False">
+
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#FFD66B" Offset="0.0" />
+            <GradientStop Color="#FF9A4D" Offset="1.0" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <Grid>
+
+        <Grid RowDefinitions="Auto,*,Auto"
+              Padding="24"
+              Opacity="0"
+              x:Name="RootGrid">
+
+            <Label
+                x:Name="TitleLabel"
+                Grid.Row="0"
+                Text="Welcome!"
+                TextColor="White"
+                FontSize="34"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"
+                Margin="0,40,0,20"
+                TranslationY="-20" />
+
+            <VerticalStackLayout
+                Grid.Row="1"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                Spacing="12"
+                Scale="0.8"
+                x:Name="LogoSection">
+
+                <Image
+                    Source="app_logo.png"
+                    HeightRequest="140"
+                    Aspect="AspectFit" />
+
+                <Label
+                    Text="RE-LEARN 41"
+                    TextColor="#1E1E1E"
+                    FontSize="18"
+                    FontAttributes="Bold"
+                    HorizontalTextAlignment="Center" />
+            </VerticalStackLayout>
+
+            <VerticalStackLayout
+                Grid.Row="2"
+                Spacing="18"
+                Margin="0,0,0,40"
+                HorizontalOptions="Center"
+                TranslationY="40"
+                x:Name="ButtonsSection">
+
+                <Border
+                    StrokeShape="RoundRectangle 28"
+                    HeightRequest="56"
+                    WidthRequest="280">
+
+                    <Border.Background>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                            <GradientStop Color="#57D6E5" Offset="0.0" />
+                            <GradientStop Color="#0A58B6" Offset="1.0" />
+                        </LinearGradientBrush>
+                    </Border.Background>
+
+                    <Button
+                        Text="Continue without account"
+                        BackgroundColor="Transparent"
+                        TextColor="White"
+                        FontSize="15"
+                        FontAttributes="Bold"
+                        Pressed="OnButtonPressed"
+                        Released="OnButtonReleased" />
+                </Border>
+
+                <Label
+                    Text="or"
+                    TextColor="White"
+                    FontSize="14"
+                    HorizontalOptions="Center" />
+
+                <Border
+                    StrokeShape="RoundRectangle 28"
+                    HeightRequest="56"
+                    WidthRequest="280">
+
+                    <Border.Background>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                            <GradientStop Color="#57D6E5" Offset="0.0" />
+                            <GradientStop Color="#0A58B6" Offset="1.0" />
+                        </LinearGradientBrush>
+                    </Border.Background>
+
+                    <Button
+                        Text="Login using an existing account"
+                        BackgroundColor="Transparent"
+                        TextColor="White"
+                        FontSize="15"
+                        FontAttributes="Bold"
+                        Clicked="OnLoginClicked"
+                        Pressed="OnButtonPressed"
+                        Released="OnButtonReleased" />
+                </Border>
+
+            </VerticalStackLayout>
+
+        </Grid>
+
+        <views:LoadingScreen IsLoading="{Binding IsLoadingVisible}" />
+
+    </Grid>
+</ContentPage>

@@ -1,7 +1,6 @@
-﻿using Models1.Contracts;
-namespace Models1.Books;
+﻿namespace Models1.Books;
 
-public class BookBaseModel : IBookContracts
+public class BookBaseModel
 {
     public string UniqueID { get; set; } = string.Empty;
     public string Title { get; set; } = string.Empty;

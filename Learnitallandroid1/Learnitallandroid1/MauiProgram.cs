@@ -15,6 +15,7 @@ namespace Learnitallandroid1
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
 
+
 #if DEBUG
     		builder.Logging.AddDebug();
 #endif

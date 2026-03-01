@@ -1,4 +1,6 @@
 <Solution>
   <Project Path="Learnitallandroid1/Learnitallandroid1.csproj" />
+  <Project Path="LogicLibrary1/LogicLibrary1.csproj" Id="ed8168af-945f-47c1-a6d5-aeb423b3e92b" />
   <Project Path="Models1/Models1.csproj" Id="e3c54317-b44c-45b5-81d2-8cd45c70f713" />
+  <Project Path="TestProject1/TestProject1.csproj" Id="fc9e72d6-79b3-4b5e-8ed0-3b7840bf55dc" />
 </Solution>
