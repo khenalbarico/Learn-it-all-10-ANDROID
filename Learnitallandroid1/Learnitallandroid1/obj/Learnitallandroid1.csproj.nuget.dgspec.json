@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Albarico\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\Learnitallandroid1\\Learnitallandroid1.csproj": {}
+    "C:\\Users\\Khen\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\Learnitallandroid1\\Learnitallandroid1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Albarico\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\Learnitallandroid1\\Learnitallandroid1.csproj": {
+    "C:\\Users\\Khen\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\Learnitallandroid1\\Learnitallandroid1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Albarico\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\Learnitallandroid1\\Learnitallandroid1.csproj",
+        "projectUniqueName": "C:\\Users\\Khen\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\Learnitallandroid1\\Learnitallandroid1.csproj",
         "projectName": "Learnitallandroid1",
-        "projectPath": "C:\\Users\\Albarico\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\Learnitallandroid1\\Learnitallandroid1.csproj",
-        "packagesPath": "C:\\Users\\Albarico\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Albarico\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\Learnitallandroid1\\obj\\",
+        "projectPath": "C:\\Users\\Khen\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\Learnitallandroid1\\Learnitallandroid1.csproj",
+        "packagesPath": "C:\\Users\\Khen\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Khen\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\Learnitallandroid1\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Albarico\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Khen\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -37,44 +37,44 @@
           "net10.0-android36.0": {
             "targetAlias": "net10.0-android",
             "projectReferences": {
-              "C:\\Users\\Albarico\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\LogicLibrary1\\LogicLibrary1.csproj": {
-                "projectPath": "C:\\Users\\Albarico\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\LogicLibrary1\\LogicLibrary1.csproj"
+              "C:\\Users\\Khen\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\LogicLibrary1\\LogicLibrary1.csproj": {
+                "projectPath": "C:\\Users\\Khen\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\LogicLibrary1\\LogicLibrary1.csproj"
               },
-              "C:\\Users\\Albarico\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\Models1\\Models1.csproj": {
-                "projectPath": "C:\\Users\\Albarico\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\Models1\\Models1.csproj"
+              "C:\\Users\\Khen\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\Models1\\Models1.csproj": {
+                "projectPath": "C:\\Users\\Khen\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\Models1\\Models1.csproj"
               }
             }
           },
           "net10.0-ios26.1": {
             "targetAlias": "net10.0-ios",
             "projectReferences": {
-              "C:\\Users\\Albarico\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\LogicLibrary1\\LogicLibrary1.csproj": {
-                "projectPath": "C:\\Users\\Albarico\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\LogicLibrary1\\LogicLibrary1.csproj"
+              "C:\\Users\\Khen\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\LogicLibrary1\\LogicLibrary1.csproj": {
+                "projectPath": "C:\\Users\\Khen\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\LogicLibrary1\\LogicLibrary1.csproj"
               },
-              "C:\\Users\\Albarico\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\Models1\\Models1.csproj": {
-                "projectPath": "C:\\Users\\Albarico\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\Models1\\Models1.csproj"
+              "C:\\Users\\Khen\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\Models1\\Models1.csproj": {
+                "projectPath": "C:\\Users\\Khen\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\Models1\\Models1.csproj"
               }
             }
           },
           "net10.0-maccatalyst26.1": {
             "targetAlias": "net10.0-maccatalyst",
             "projectReferences": {
-              "C:\\Users\\Albarico\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\LogicLibrary1\\LogicLibrary1.csproj": {
-                "projectPath": "C:\\Users\\Albarico\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\LogicLibrary1\\LogicLibrary1.csproj"
+              "C:\\Users\\Khen\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\LogicLibrary1\\LogicLibrary1.csproj": {
+                "projectPath": "C:\\Users\\Khen\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\LogicLibrary1\\LogicLibrary1.csproj"
               },
-              "C:\\Users\\Albarico\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\Models1\\Models1.csproj": {
-                "projectPath": "C:\\Users\\Albarico\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\Models1\\Models1.csproj"
+              "C:\\Users\\Khen\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\Models1\\Models1.csproj": {
+                "projectPath": "C:\\Users\\Khen\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\Models1\\Models1.csproj"
               }
             }
           },
           "net10.0-windows10.0.19041": {
             "targetAlias": "net10.0-windows10.0.19041.0",
             "projectReferences": {
-              "C:\\Users\\Albarico\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\LogicLibrary1\\LogicLibrary1.csproj": {
-                "projectPath": "C:\\Users\\Albarico\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\LogicLibrary1\\LogicLibrary1.csproj"
+              "C:\\Users\\Khen\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\LogicLibrary1\\LogicLibrary1.csproj": {
+                "projectPath": "C:\\Users\\Khen\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\LogicLibrary1\\LogicLibrary1.csproj"
               },
-              "C:\\Users\\Albarico\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\Models1\\Models1.csproj": {
-                "projectPath": "C:\\Users\\Albarico\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\Models1\\Models1.csproj"
+              "C:\\Users\\Khen\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\Models1\\Models1.csproj": {
+                "projectPath": "C:\\Users\\Khen\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\Models1\\Models1.csproj"
               }
             }
           }
@@ -101,12 +101,12 @@
             },
             "Microsoft.Maui.Controls": {
               "target": "Package",
-              "version": "[10.0.1, )"
+              "version": "[10.0.30, )"
             },
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[10.0.2, )",
+              "version": "[10.0.3, )",
               "autoReferenced": true
             }
           },
@@ -132,7 +132,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -417,12 +417,12 @@
             },
             "Microsoft.Maui.Controls": {
               "target": "Package",
-              "version": "[10.0.1, )"
+              "version": "[10.0.30, )"
             },
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[10.0.2, )",
+              "version": "[10.0.3, )",
               "autoReferenced": true
             }
           },
@@ -448,7 +448,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -733,12 +733,12 @@
             },
             "Microsoft.Maui.Controls": {
               "target": "Package",
-              "version": "[10.0.1, )"
+              "version": "[10.0.30, )"
             },
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[10.0.2, )",
+              "version": "[10.0.3, )",
               "autoReferenced": true
             }
           },
@@ -765,7 +765,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -1050,7 +1050,7 @@
             },
             "Microsoft.Maui.Controls": {
               "target": "Package",
-              "version": "[10.0.1, )"
+              "version": "[10.0.30, )"
             }
           },
           "imports": [
@@ -1078,7 +1078,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -1373,20 +1373,20 @@
         }
       }
     },
-    "C:\\Users\\Albarico\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\LogicLibrary1\\LogicLibrary1.csproj": {
+    "C:\\Users\\Khen\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\LogicLibrary1\\LogicLibrary1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Albarico\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\LogicLibrary1\\LogicLibrary1.csproj",
+        "projectUniqueName": "C:\\Users\\Khen\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\LogicLibrary1\\LogicLibrary1.csproj",
         "projectName": "LogicLibrary1",
-        "projectPath": "C:\\Users\\Albarico\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\LogicLibrary1\\LogicLibrary1.csproj",
-        "packagesPath": "C:\\Users\\Albarico\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Albarico\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\LogicLibrary1\\obj\\",
+        "projectPath": "C:\\Users\\Khen\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\LogicLibrary1\\LogicLibrary1.csproj",
+        "packagesPath": "C:\\Users\\Khen\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Khen\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\LogicLibrary1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Albarico\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Khen\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -1402,8 +1402,8 @@
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\Albarico\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\Models1\\Models1.csproj": {
-                "projectPath": "C:\\Users\\Albarico\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\Models1\\Models1.csproj"
+              "C:\\Users\\Khen\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\Models1\\Models1.csproj": {
+                "projectPath": "C:\\Users\\Khen\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\Models1\\Models1.csproj"
               }
             }
           }
@@ -1449,7 +1449,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -1727,20 +1727,20 @@
         }
       }
     },
-    "C:\\Users\\Albarico\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\Models1\\Models1.csproj": {
+    "C:\\Users\\Khen\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\Models1\\Models1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Albarico\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\Models1\\Models1.csproj",
+        "projectUniqueName": "C:\\Users\\Khen\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\Models1\\Models1.csproj",
         "projectName": "Models1",
-        "projectPath": "C:\\Users\\Albarico\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\Models1\\Models1.csproj",
-        "packagesPath": "C:\\Users\\Albarico\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Albarico\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\Models1\\obj\\",
+        "projectPath": "C:\\Users\\Khen\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\Models1\\Models1.csproj",
+        "packagesPath": "C:\\Users\\Khen\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Khen\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\Models1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Albarico\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Khen\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -1789,7 +1789,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",

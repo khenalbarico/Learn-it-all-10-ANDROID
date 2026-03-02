@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Albarico\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\Models1\\Models1.csproj": {}
+    "C:\\Users\\Khen\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\Models1\\Models1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Albarico\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\Models1\\Models1.csproj": {
+    "C:\\Users\\Khen\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\Models1\\Models1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Albarico\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\Models1\\Models1.csproj",
+        "projectUniqueName": "C:\\Users\\Khen\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\Models1\\Models1.csproj",
         "projectName": "Models1",
-        "projectPath": "C:\\Users\\Albarico\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\Models1\\Models1.csproj",
-        "packagesPath": "C:\\Users\\Albarico\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Albarico\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\Models1\\obj\\",
+        "projectPath": "C:\\Users\\Khen\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\Models1\\Models1.csproj",
+        "packagesPath": "C:\\Users\\Khen\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Khen\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\Models1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Albarico\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Khen\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -66,7 +66,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
