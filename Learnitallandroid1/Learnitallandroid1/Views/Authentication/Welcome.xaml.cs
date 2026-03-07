@@ -1,3 +1,5 @@
+using Learnitallandroid1.Views.App;
+
 namespace Learnitallandroid1.Views.Authentication;
 
 public partial class Welcome : AuthPage1
@@ -35,5 +37,7 @@ public partial class Welcome : AuthPage1
 
     private async void OnLoginClicked(object sender, EventArgs e)
     => await GoToAsync<LoginRegister>();
-    
+    private async void OnContinueClicked(object sender, EventArgs e)
+    => await GoToAsync<Library>();
+
 }

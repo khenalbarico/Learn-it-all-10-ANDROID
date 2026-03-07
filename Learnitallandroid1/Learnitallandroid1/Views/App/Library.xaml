@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:views="clr-namespace:Learnitallandroid1.Views.App"
+             x:Class="Learnitallandroid1.Views.App.Library"
+             Title="Library"
+             BackgroundColor="#F5F7FB"
+             Shell.NavBarIsVisible="False">
+
+    <Grid>
+
+        <ScrollView>
+            <VerticalStackLayout Padding="20,40,20,20" Spacing="20">
+
+                <Grid ColumnDefinitions="Auto,*,220">
+
+                    <ImageButton Source="menu.png"
+                                 BackgroundColor="Transparent"
+                                 WidthRequest="28"
+                                 HeightRequest="28"
+                                 Clicked="OnMenuClicked" />
+
+                    <Border Grid.Column="1"
+                            StrokeThickness="0"
+                            BackgroundColor="White"
+                            StrokeShape="RoundRectangle 14"
+                            Padding="16,12"
+                            Margin="12,0,12,0">
+                        <HorizontalStackLayout Spacing="8">
+                            <Label Text="All Categories"
+                                   FontSize="18"
+                                   TextColor="#1F2A44"
+                                   VerticalOptions="Center" />
+                            <Label Text="▼"
+                                   FontSize="14"
+                                   TextColor="#1F2A44"
+                                   VerticalOptions="Center" />
+                        </HorizontalStackLayout>
+                    </Border>
+
+                    <Border Grid.Column="2"
+                            StrokeThickness="0"
+                            BackgroundColor="White"
+                            StrokeShape="RoundRectangle 14"
+                            Padding="16,12">
+                        <Grid ColumnDefinitions="Auto,*" ColumnSpacing="10">
+                            <Label Text="🔍"
+                                   FontSize="18"
+                                   VerticalOptions="Center"
+                                   TextColor="#667085" />
+                            <Entry Grid.Column="1"
+                                   Placeholder="Search books"
+                                   BackgroundColor="Transparent"
+                                   TextColor="#1F2A44"
+                                   PlaceholderColor="#98A2B3" />
+                        </Grid>
+                    </Border>
+
+                </Grid>
+
+                <CollectionView>
+                    <CollectionView.ItemsLayout>
+                        <GridItemsLayout Orientation="Vertical"
+                                         Span="2"
+                                         HorizontalItemSpacing="16"
+                                         VerticalItemSpacing="16"/>
+                    </CollectionView.ItemsLayout>
+
+                    <CollectionView.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Book 1</x:String>
+                            <x:String>Book 2</x:String>
+                            <x:String>Book 3</x:String>
+                            <x:String>Book 4</x:String>
+                        </x:Array>
+                    </CollectionView.ItemsSource>
+
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+
+                            <Border Stroke="#D9E2F2"
+                                    StrokeThickness="1"
+                                    BackgroundColor="White"
+                                    StrokeShape="RoundRectangle 18"
+                                    Padding="14">
+
+                                <VerticalStackLayout Spacing="10">
+
+                                    <Border HeightRequest="150"
+                                            StrokeThickness="0"
+                                            BackgroundColor="#DCEBFF"
+                                            StrokeShape="RoundRectangle 14">
+                                        <Grid>
+                                            <Label Text="Book Cover"
+                                                   HorizontalOptions="Center"
+                                                   VerticalOptions="Center"
+                                                   TextColor="#1F2A44"
+                                                   FontAttributes="Bold"/>
+                                        </Grid>
+                                    </Border>
+
+                                    <Label Text="Introduction to Data Science"
+                                           FontSize="20"
+                                           FontAttributes="Bold"
+                                           TextColor="#1F2A44"
+                                           LineBreakMode="TailTruncation"/>
+
+                                    <Label Text="Category: Technology"
+                                           FontSize="14"
+                                           TextColor="#667085"/>
+
+                                    <Label Text="Author: John Smith"
+                                           FontSize="14"
+                                           TextColor="#667085"/>
+
+                                    <Label Text="4.8 ★ | 320 pages"
+                                           FontSize="14"
+                                           TextColor="#667085"/>
+
+                                    <Border StrokeThickness="0"
+                                            BackgroundColor="#1565C0"
+                                            StrokeShape="RoundRectangle 14"
+                                            Padding="0,10">
+                                        <Label Text="View Details"
+                                               HorizontalOptions="Center"
+                                               TextColor="White"
+                                               FontAttributes="Bold"/>
+                                    </Border>
+
+                                </VerticalStackLayout>
+
+                            </Border>
+
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+
+            </VerticalStackLayout>
+        </ScrollView>
+
+        <views:HamburgerMenu x:Name="MenuPanel"
+                             IsVisible="False"
+                             TranslationX="-220"
+                             ZIndex="2"/>
+
+        <Grid x:Name="Overlay"
+              BackgroundColor="#80000000"
+              IsVisible="False"
+              Opacity="0"
+              ZIndex="1">
+            <Grid.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OnOverlayTapped"/>
+            </Grid.GestureRecognizers>
+        </Grid>
+
+    </Grid>
+
+</ContentPage>
