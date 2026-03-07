@@ -3,22 +3,21 @@ namespace Learnitallandroid1.Views.Authentication;
 public partial class Welcome : AuthPage1
 {
     public Welcome()
-    {
-        InitializeComponent();
-    }
+    => InitializeComponent();
+    
 
     protected override async void OnAppearing()
     {
         base.OnAppearing();
 
-        RootGrid.Opacity = 0;
-        TitleLabel.TranslationY = -20;
-        LogoSection.Scale = 0.8;
+        RootGrid.Opacity            = 0;
+        TitleLabel.TranslationY     = -20;
+        LogoSection.Scale           = 0.8;
         ButtonsSection.TranslationY = 40;
 
-        await RootGrid.FadeToAsync(1, 400, Easing.CubicOut);
-        _ = TitleLabel.TranslateToAsync(0, 0, 400, Easing.CubicOut);
-        await LogoSection.ScaleToAsync(1, 500, Easing.SpringOut);
+        await RootGrid      .FadeToAsync(1, 400, Easing.CubicOut);
+        _ =   TitleLabel    .TranslateToAsync(0, 0, 400, Easing.CubicOut);
+        await LogoSection   .ScaleToAsync(1, 500, Easing.SpringOut);
         await ButtonsSection.TranslateToAsync(0, 0, 400, Easing.CubicOut);
     }
 
@@ -35,7 +34,6 @@ public partial class Welcome : AuthPage1
     }
 
     private async void OnLoginClicked(object sender, EventArgs e)
-    {
-        await GoToAsync<LoginRegister>();
-    }
+    => await GoToAsync<LoginRegister>();
+    
 }

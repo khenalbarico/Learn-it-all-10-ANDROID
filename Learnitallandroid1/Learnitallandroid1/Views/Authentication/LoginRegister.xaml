@@ -107,8 +107,7 @@
                                        Placeholder="Enter your password"
                                        PlaceholderColor="#94A3B8"
                                        TextColor="#1F2A44"
-                                       IsPassword="True"
-                                       TextChanged="OnLoginPasswordChanged" />
+                                       IsPassword="True" />
                             </Border>
                         </VerticalStackLayout>
 
@@ -196,8 +195,7 @@
                                        Placeholder="Create a password"
                                        PlaceholderColor="#94A3B8"
                                        TextColor="#1F2A44"
-                                       IsPassword="True"
-                                       TextChanged="OnRegisterPasswordChanged" />
+                                       IsPassword="True" />
                             </Border>
                         </VerticalStackLayout>
 
@@ -218,8 +216,7 @@
                                        Placeholder="Confirm your password"
                                        PlaceholderColor="#94A3B8"
                                        TextColor="#1F2A44"
-                                       IsPassword="True"
-                                       TextChanged="OnRegisterConfirmPasswordChanged" />
+                                       IsPassword="True" />
                             </Border>
                         </VerticalStackLayout>
 

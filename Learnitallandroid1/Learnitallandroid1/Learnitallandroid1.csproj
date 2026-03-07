@@ -67,7 +67,6 @@
 
 	<ItemGroup>
 	  <Folder Include="Resources\Images\Login\" />
-	  <Folder Include="Views\Home\" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -83,6 +82,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\AuthPage1.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Home\Home.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\LoadingScreen.xaml">

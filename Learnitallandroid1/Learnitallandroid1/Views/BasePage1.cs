@@ -4,15 +4,15 @@ namespace Learnitallandroid1.Views;
 
 public abstract class BasePage1 : ContentPage
 {
+    private bool                           _isNavigating;
     private readonly ILoadingScreenManager _loadingScreenManager = new LoadingScreenManager1();
-    private bool _isNavigating;
 
     public bool IsLoadingVisible => _loadingScreenManager.IsActive(GetType());
 
     protected BasePage1()
     {
         Shell.SetNavBarIsVisible(this, false);
-        BindingContext = this;
+        BindingContext =         this;
     }
 
     protected void ShowLoading()
