@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Learnitallandroid1")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+d8a81cc063b2323b4ec969a68dcd191249b6fd1a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+63f2a5045fd93701153331433d98e1460b0b3755")]
 [assembly: System.Reflection.AssemblyProductAttribute("Learnitallandroid1")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Learnitallandroid1")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
