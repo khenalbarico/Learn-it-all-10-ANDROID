@@ -1,5 +1,11 @@
-﻿################################################################################
-# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
-################################################################################
+﻿.vs/
+.idea/
+.vscode/
 
-/Learnitallandroid1/.gitignore
+[Bb]in/
+[Oo]bj/
+
+*.user
+*.rsuser
+*.suo
+*.log
