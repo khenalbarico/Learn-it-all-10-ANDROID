@@ -3,7 +3,8 @@
 public interface ILoadingScreenManager
 {
     Type? ActiveClassType { get; }
-    void ShowLoadingScreen<T>();
+
+    void ShowLoadingScreen(Type pageType);
+    bool IsActive(Type pageType);
     void CloseLoadingScreen();
-    bool IsActive<T>();
 }

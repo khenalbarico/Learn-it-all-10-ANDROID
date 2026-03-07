@@ -1,6 +1,4 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-
-namespace Learnitallandroid1
+﻿namespace Learnitallandroid1
 {
     public partial class App : Application
     {

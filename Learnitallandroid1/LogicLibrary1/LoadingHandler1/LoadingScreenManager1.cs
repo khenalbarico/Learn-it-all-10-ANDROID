@@ -4,11 +4,11 @@ public class LoadingScreenManager1 : ILoadingScreenManager
 {
     public Type? ActiveClassType { get; private set; }
 
-    public void ShowLoadingScreen<T>()
-        => ActiveClassType = typeof(T);
+    public void ShowLoadingScreen(Type pageType)
+        => ActiveClassType = pageType;
 
-    public bool IsActive<T>()
-        => ActiveClassType == typeof(T);
+    public bool IsActive(Type pageType)
+        => ActiveClassType == pageType;
 
     public void CloseLoadingScreen()
         => ActiveClassType = null;

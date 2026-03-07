@@ -1,20 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage
+<base:AuthPage1
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:views="clr-namespace:Learnitallandroid1.Views"
+    xmlns:base="clr-namespace:Learnitallandroid1.Views"
+    x:DataType="base:BasePage1"
     x:Class="Learnitallandroid1.Views.Authentication.Welcome"
-    Shell.NavBarIsVisible="False">
-
-    <ContentPage.Background>
-        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-            <GradientStop Color="#FFD66B" Offset="0.0" />
-            <GradientStop Color="#FF9A4D" Offset="1.0" />
-        </LinearGradientBrush>
-    </ContentPage.Background>
+    BackgroundColor="#F8FAFC">
 
     <Grid>
-
         <Grid RowDefinitions="Auto,*,Auto"
               Padding="24"
               Opacity="0"
@@ -24,7 +17,7 @@
                 x:Name="TitleLabel"
                 Grid.Row="0"
                 Text="Welcome!"
-                TextColor="White"
+                TextColor="#1F2A44"
                 FontSize="34"
                 FontAttributes="Bold"
                 HorizontalOptions="Center"
@@ -39,17 +32,34 @@
                 Scale="0.8"
                 x:Name="LogoSection">
 
-                <Image
-                    Source="app_logo.png"
-                    HeightRequest="140"
-                    Aspect="AspectFit" />
+                <Border BackgroundColor="White"
+                        Stroke="#E9EEF5"
+                        StrokeThickness="1"
+                        Padding="28">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="28" />
+                    </Border.StrokeShape>
+                    <Border.Shadow>
+                        <Shadow Brush="#180A58B6"
+                                Offset="0,8"
+                                Radius="18"
+                                Opacity="0.16" />
+                    </Border.Shadow>
 
-                <Label
-                    Text="RE-LEARN 41"
-                    TextColor="#1E1E1E"
-                    FontSize="18"
-                    FontAttributes="Bold"
-                    HorizontalTextAlignment="Center" />
+                    <VerticalStackLayout Spacing="12">
+                        <Image
+                            Source="app_logo.png"
+                            HeightRequest="140"
+                            Aspect="AspectFit" />
+
+                        <Label
+                            Text="RE-LEARN 41"
+                            TextColor="#1F2A44"
+                            FontSize="18"
+                            FontAttributes="Bold"
+                            HorizontalTextAlignment="Center" />
+                    </VerticalStackLayout>
+                </Border>
             </VerticalStackLayout>
 
             <VerticalStackLayout
@@ -64,7 +74,6 @@
                     StrokeShape="RoundRectangle 28"
                     HeightRequest="56"
                     WidthRequest="280">
-
                     <Border.Background>
                         <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
                             <GradientStop Color="#57D6E5" Offset="0.0" />
@@ -84,7 +93,7 @@
 
                 <Label
                     Text="or"
-                    TextColor="White"
+                    TextColor="#64748B"
                     FontSize="14"
                     HorizontalOptions="Center" />
 
@@ -92,11 +101,10 @@
                     StrokeShape="RoundRectangle 28"
                     HeightRequest="56"
                     WidthRequest="280">
-
                     <Border.Background>
                         <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
-                            <GradientStop Color="#57D6E5" Offset="0.0" />
-                            <GradientStop Color="#0A58B6" Offset="1.0" />
+                            <GradientStop Color="#FFB072" Offset="0.0" />
+                            <GradientStop Color="#FF9A4D" Offset="1.0" />
                         </LinearGradientBrush>
                     </Border.Background>
 
@@ -112,10 +120,6 @@
                 </Border>
 
             </VerticalStackLayout>
-
         </Grid>
-
-        <views:LoadingScreen IsLoading="{Binding IsLoadingVisible}" />
-
     </Grid>
-</ContentPage>
+</base:AuthPage1>

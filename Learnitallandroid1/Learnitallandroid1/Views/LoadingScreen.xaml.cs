@@ -2,7 +2,7 @@ namespace Learnitallandroid1.Views;
 
 public partial class LoadingScreen : ContentView
 {
-    CancellationTokenSource? _rotationCts;
+    private CancellationTokenSource? _rotationCts;
 
     public static readonly BindableProperty IsLoadingProperty =
         BindableProperty.Create(
@@ -23,7 +23,7 @@ public partial class LoadingScreen : ContentView
         InitializeComponent();
     }
 
-    static async void OnIsLoadingChanged(BindableObject bindable, object oldValue, object newValue)
+    private static async void OnIsLoadingChanged(BindableObject bindable, object oldValue, object newValue)
     {
         var control = (LoadingScreen)bindable;
 
@@ -33,15 +33,17 @@ public partial class LoadingScreen : ContentView
             await control.HideAsync();
     }
 
-    async Task ShowAsync()
+    private async Task ShowAsync()
     {
         Root.IsVisible = true;
 
         _rotationCts?.Cancel();
+        _rotationCts?.Dispose();
         _rotationCts = new CancellationTokenSource();
 
         LoaderCircle.Opacity = 0;
         LoaderCircle.Scale = 0.85;
+        SpinnerRing.Rotation = 0;
 
         await Task.WhenAll(
             LoaderCircle.FadeToAsync(1, 220, Easing.CubicOut),
@@ -51,7 +53,7 @@ public partial class LoadingScreen : ContentView
         _ = RotateAsync(_rotationCts.Token);
     }
 
-    async Task HideAsync()
+    private async Task HideAsync()
     {
         _rotationCts?.Cancel();
 
@@ -60,15 +62,22 @@ public partial class LoadingScreen : ContentView
             LoaderCircle.ScaleToAsync(0.9, 180, Easing.CubicIn)
         );
 
+        SpinnerRing.Rotation = 0;
         Root.IsVisible = false;
     }
 
-    async Task RotateAsync(CancellationToken token)
+    private async Task RotateAsync(CancellationToken token)
     {
-        while (!token.IsCancellationRequested)
+        try
         {
-            await SpinnerRing.RotateToAsync(360, 900, Easing.Linear);
-            SpinnerRing.Rotation = 0;
+            while (!token.IsCancellationRequested)
+            {
+                await SpinnerRing.RotateToAsync(360, 900, Easing.Linear);
+                SpinnerRing.Rotation = 0;
+            }
+        }
+        catch
+        {
         }
     }
 }
