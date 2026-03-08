@@ -13,7 +13,7 @@ public class AuthenticationFacts1 (ITestOutputHelper _ctx)
         //Arrange
         var loginPayload = new UserLogin
         {
-            Email = "test@test.com",
+            Email = "khenalbarico05@gmail.com",
             Password = "test123456"
         };
 
@@ -27,12 +27,12 @@ public class AuthenticationFacts1 (ITestOutputHelper _ctx)
         result.Uid.Should().NotBeNullOrEmpty();
     }
 
-    [Fact] public async Task Firebase_SignUp()
+    [Fact] public async Task Firebase_Register()
     {
         //Arrange
         var registerPayload = new UserRegister
         {
-            Email = "test@test.com",
+            Email = "khenalbarico05@gmail.com",
             Password = "test123456"
         };
 

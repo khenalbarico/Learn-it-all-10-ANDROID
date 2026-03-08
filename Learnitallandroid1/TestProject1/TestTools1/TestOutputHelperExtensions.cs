@@ -5,6 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Xunit.Abstractions;
 using LogicLibrary1.FirebaseClient1.AuthenticationHandler1;
+using Models1.Config;
 
 namespace TestProject1.TestTools1;
 
@@ -34,6 +35,8 @@ internal static class TestOutputHelperExtensions
                     return new FirebaseAuthClient(config);
                 });
 
+                services.AddSingleton<AuthenticationConfig>();
+                services.AddSingleton<HttpClient>();
                 services.AddSingleton<IFirebaseAuth, Authentication1>();
 
                 svcModifier?.Invoke(services);
