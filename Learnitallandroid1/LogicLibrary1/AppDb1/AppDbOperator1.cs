@@ -51,7 +51,15 @@ namespace LogicLibrary1.AppDb1
             await _dbOperations.PatchAsync(payload, $"Users1/{user}");
         }
 
+        public async Task<List<T>> LoadAllBooksAsync<T>() where T : class, new()
+        => await _dbOperations.GetListAsync<T>("Books1");
+        
+        public async Task<T> LoadThisBookAsync<T>(string bookUid)
+        {
+            throw new NotImplementedException();
+        }
+
         public async Task RemoveThisBookAsync(string bookUid)
-        => await _dbOperations.RemoveUidAsync($"Books1/{bookUid}");     
+        => await _dbOperations.RemoveUidAsync($"Books1/{bookUid}");
     }
 }

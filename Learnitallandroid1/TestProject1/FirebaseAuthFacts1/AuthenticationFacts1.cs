@@ -3,7 +3,7 @@ using Microsoft.Extensions.Configuration;
 using TestProject1.TestTools1;
 using Xunit.Abstractions;
 
-namespace TestProject1.AuthHandlerFacts1;
+namespace TestProject1.FirebaseAuthFacts1;
 
 public class AuthenticationFacts1 (ITestOutputHelper _ctx)
 {

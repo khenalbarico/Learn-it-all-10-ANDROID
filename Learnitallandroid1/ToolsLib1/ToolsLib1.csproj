@@ -11,4 +11,8 @@
     <PackageReference Include="FirebaseDatabase.net" Version="5.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="SyncfusionClient1\" />
+  </ItemGroup>
+
 </Project>

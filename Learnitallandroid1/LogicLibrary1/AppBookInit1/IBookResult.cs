@@ -2,7 +2,7 @@
 
 namespace LogicLibrary1.AppBookInit1;
 
-public interface IBookBoardExams
+public interface IBookResult
 {
     [Required] string Uid            { get; set; }
     [Required] string DriveUrl       { get; set; }
