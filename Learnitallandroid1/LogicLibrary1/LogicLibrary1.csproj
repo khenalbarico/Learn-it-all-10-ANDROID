@@ -7,19 +7,18 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<Folder Include="FirebaseClient1\StorageHandler1\" />
-	</ItemGroup>
-
-	<ItemGroup>
 		<PackageReference Include="FirebaseAuthentication.net" Version="4.1.0" />
 		<PackageReference Include="Microsoft.Extensions.Configuration" Version="10.0.3" />
 		<PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="10.0.3" />
 		<PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="10.0.3" />
 		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="10.0.3" />
+		<PackageReference Include="Microsoft.Extensions.Options" Version="10.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="10.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Http" Version="10.0.0" />
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\Models1\Models1.csproj" />
+		<ProjectReference Include="..\ToolsLib1\ToolsLib1.csproj" />
 	</ItemGroup>
 
 </Project>

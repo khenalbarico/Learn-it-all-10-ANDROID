@@ -37,6 +37,37 @@
           }
         }
       },
+      "FirebaseDatabase.net/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "LiteDB": "5.0.17",
+          "Newtonsoft.Json": "13.0.3",
+          "System.Reactive": "6.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Firebase.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Firebase.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "LiteDB/5.0.17": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/LiteDB.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/LiteDB.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.CodeCoverage/17.14.1": {
         "type": "package",
         "compile": {
@@ -405,6 +436,30 @@
         },
         "runtime": {
           "lib/net10.0/Microsoft.Extensions.Hosting.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.Http/10.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "10.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.0",
+          "Microsoft.Extensions.Diagnostics": "10.0.0",
+          "Microsoft.Extensions.Logging": "10.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.0",
+          "Microsoft.Extensions.Options": "10.0.0"
+        },
+        "compile": {
+          "lib/net10.0/Microsoft.Extensions.Http.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.Extensions.Http.dll": {
             "related": ".xml"
           }
         },
@@ -930,6 +985,22 @@
           }
         }
       },
+      "System.Reactive/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
       "xunit/2.9.3": {
         "type": "package",
         "dependencies": {
@@ -1035,7 +1106,10 @@
           "Microsoft.Extensions.Configuration.Binder": "10.0.3",
           "Microsoft.Extensions.Configuration.Json": "10.0.3",
           "Microsoft.Extensions.DependencyInjection": "10.0.3",
-          "Models1": "1.0.0"
+          "Microsoft.Extensions.Http": "10.0.0",
+          "Microsoft.Extensions.Options": "10.0.0",
+          "Microsoft.Extensions.Options.ConfigurationExtensions": "10.0.0",
+          "ToolsLib1": "1.0.0"
         },
         "compile": {
           "bin/placeholder/LogicLibrary1.dll": {}
@@ -1044,14 +1118,18 @@
           "bin/placeholder/LogicLibrary1.dll": {}
         }
       },
-      "Models1/1.0.0": {
+      "ToolsLib1/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "FirebaseAuthentication.net": "4.1.0",
+          "FirebaseDatabase.net": "5.0.0"
+        },
         "compile": {
-          "bin/placeholder/Models1.dll": {}
+          "bin/placeholder/ToolsLib1.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Models1.dll": {}
+          "bin/placeholder/ToolsLib1.dll": {}
         }
       }
     }
@@ -1169,6 +1247,39 @@
         "firebaseauthentication.net.nuspec",
         "lib/netstandard2.0/Firebase.Auth.dll",
         "lib/netstandard2.0/Firebase.Auth.xml"
+      ]
+    },
+    "FirebaseDatabase.net/5.0.0": {
+      "sha512": "tU2JF31msyK30cN1fqcRfeyRikobOfx9FKmgHVINHSN0NnP+DqG89KkFdd5ebefDLthG4Ac9yLnXjOpeEX+52g==",
+      "type": "package",
+      "path": "firebasedatabase.net/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "firebasedatabase.net.5.0.0.nupkg.sha512",
+        "firebasedatabase.net.nuspec",
+        "lib/netstandard2.0/Firebase.dll",
+        "lib/netstandard2.0/Firebase.xml"
+      ]
+    },
+    "LiteDB/5.0.17": {
+      "sha512": "cKPvkdlzIts3ZKu/BzoIc/Y71e4VFKlij4LyioPFATZMot+wB7EAm1FFbZSJez6coJmQUoIg/3yHE1MMU+zOdg==",
+      "type": "package",
+      "path": "litedb/5.0.17",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "AppVeyorSettings.json",
+        "LICENSE",
+        "icon_64x64.png",
+        "lib/net45/LiteDB.dll",
+        "lib/net45/LiteDB.xml",
+        "lib/netstandard1.3/LiteDB.dll",
+        "lib/netstandard1.3/LiteDB.xml",
+        "lib/netstandard2.0/LiteDB.dll",
+        "lib/netstandard2.0/LiteDB.xml",
+        "litedb.5.0.17.nupkg.sha512",
+        "litedb.nuspec"
       ]
     },
     "Microsoft.CodeCoverage/17.14.1": {
@@ -1750,6 +1861,35 @@
         "lib/netstandard2.1/Microsoft.Extensions.Hosting.Abstractions.xml",
         "microsoft.extensions.hosting.abstractions.10.0.3.nupkg.sha512",
         "microsoft.extensions.hosting.abstractions.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "Microsoft.Extensions.Http/10.0.0": {
+      "sha512": "r+mSvm/Ryc/iYcc9zcUG5VP9EBB8PL1rgVU6macEaYk45vmGRk9PntM3aynFKN6s3Q4WW36kedTycIctctpTUQ==",
+      "type": "package",
+      "path": "microsoft.extensions.http/10.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/Microsoft.Extensions.Http.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net8.0/_._",
+        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.Http.targets",
+        "lib/net10.0/Microsoft.Extensions.Http.dll",
+        "lib/net10.0/Microsoft.Extensions.Http.xml",
+        "lib/net462/Microsoft.Extensions.Http.dll",
+        "lib/net462/Microsoft.Extensions.Http.xml",
+        "lib/net8.0/Microsoft.Extensions.Http.dll",
+        "lib/net8.0/Microsoft.Extensions.Http.xml",
+        "lib/net9.0/Microsoft.Extensions.Http.dll",
+        "lib/net9.0/Microsoft.Extensions.Http.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Http.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Http.xml",
+        "microsoft.extensions.http.10.0.0.nupkg.sha512",
+        "microsoft.extensions.http.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
@@ -2371,6 +2511,34 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "System.Reactive/6.0.0": {
+      "sha512": "31kfaW4ZupZzPsI5PVe77VhnvFF55qgma7KZr/E0iFTs6fmdhhG8j0mgEx620iLTey1EynOkEfnyTjtNEpJzGw==",
+      "type": "package",
+      "path": "system.reactive/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/net6.0-windows10.0.19041/_._",
+        "build/net6.0/_._",
+        "buildTransitive/net6.0-windows10.0.19041/_._",
+        "buildTransitive/net6.0/_._",
+        "icon.png",
+        "lib/net472/System.Reactive.dll",
+        "lib/net472/System.Reactive.xml",
+        "lib/net6.0-windows10.0.19041/System.Reactive.dll",
+        "lib/net6.0-windows10.0.19041/System.Reactive.xml",
+        "lib/net6.0/System.Reactive.dll",
+        "lib/net6.0/System.Reactive.xml",
+        "lib/netstandard2.0/System.Reactive.dll",
+        "lib/netstandard2.0/System.Reactive.xml",
+        "lib/uap10.0.18362/System.Reactive.dll",
+        "lib/uap10.0.18362/System.Reactive.pri",
+        "lib/uap10.0.18362/System.Reactive.xml",
+        "readme.md",
+        "system.reactive.6.0.0.nupkg.sha512",
+        "system.reactive.nuspec"
+      ]
+    },
     "xunit/2.9.3": {
       "sha512": "TlXQBinK35LpOPKHAqbLY4xlEen9TBafjs0V5KnA4wZsoQLQJiirCR4CbIXvOH8NzkW4YeJKP5P/Bnrodm0h9Q==",
       "type": "package",
@@ -2516,10 +2684,10 @@
       "path": "../LogicLibrary1/LogicLibrary1.csproj",
       "msbuildProject": "../LogicLibrary1/LogicLibrary1.csproj"
     },
-    "Models1/1.0.0": {
+    "ToolsLib1/1.0.0": {
       "type": "project",
-      "path": "../Models1/Models1.csproj",
-      "msbuildProject": "../Models1/Models1.csproj"
+      "path": "../ToolsLib1/ToolsLib1.csproj",
+      "msbuildProject": "../ToolsLib1/ToolsLib1.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -2528,7 +2696,7 @@
       "LogicLibrary1 >= 1.0.0",
       "Microsoft.Extensions.Hosting >= 10.0.3",
       "Microsoft.NET.Test.Sdk >= 17.14.1",
-      "Models1 >= 1.0.0",
+      "ToolsLib1 >= 1.0.0",
       "coverlet.collector >= 6.0.4",
       "xunit >= 2.9.3",
       "xunit.runner.visualstudio >= 3.1.4"
@@ -2570,8 +2738,8 @@
             "C:\\Users\\Albarico\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\LogicLibrary1\\LogicLibrary1.csproj": {
               "projectPath": "C:\\Users\\Albarico\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\LogicLibrary1\\LogicLibrary1.csproj"
             },
-            "C:\\Users\\Albarico\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\Models1\\Models1.csproj": {
-              "projectPath": "C:\\Users\\Albarico\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\Models1\\Models1.csproj"
+            "C:\\Users\\Albarico\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\ToolsLib1\\ToolsLib1.csproj": {
+              "projectPath": "C:\\Users\\Albarico\\source\\repos\\Learn-it-all-10-ANDROID\\Learnitallandroid1\\ToolsLib1\\ToolsLib1.csproj"
             }
           }
         }

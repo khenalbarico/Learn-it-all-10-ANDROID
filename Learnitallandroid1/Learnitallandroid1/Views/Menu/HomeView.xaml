@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Learnitallandroid1.Views.Menu.HomeView">
+
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="#512BD4" Offset="0.0" />
+                <GradientStop Color="#6A4CFF" Offset="0.45" />
+                <GradientStop Color="#0EA5E9" Offset="1.0" />
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <ScrollView>
+            <VerticalStackLayout Padding="24,90,24,24" Spacing="20">
+
+                <VerticalStackLayout Spacing="6">
+                    <Label
+                        Text=".NET MAUI"
+                        FontSize="14"
+                        FontAttributes="Bold"
+                        TextColor="#DDE7FF" />
+
+                    <Label
+                        Text="Home"
+                        FontSize="32"
+                        FontAttributes="Bold"
+                        TextColor="White" />
+
+                    <Label
+                        Text="This is your full-screen mobile home view."
+                        FontSize="14"
+                        TextColor="#E8EEFF" />
+                </VerticalStackLayout>
+
+                <Border
+                    BackgroundColor="#F8FAFF"
+                    StrokeThickness="0"
+                    StrokeShape="RoundRectangle 28"
+                    Padding="20"
+                    Shadow="0,12,28,#30000000">
+
+                    <VerticalStackLayout Spacing="12">
+                        <Label
+                            Text="Welcome back"
+                            FontSize="24"
+                            FontAttributes="Bold"
+                            TextColor="#111827" />
+
+                        <Label
+                            Text="Your future pages can replace this area entirely while keeping the same full-screen layout."
+                            FontSize="14"
+                            TextColor="#4B5563" />
+                    </VerticalStackLayout>
+                </Border>
+
+                <Border
+                    BackgroundColor="#19FFFFFF"
+                    StrokeThickness="0"
+                    StrokeShape="RoundRectangle 24"
+                    Padding="18">
+
+                    <Label
+                        Text="Open the sidebar using the menu button on the top-left."
+                        FontSize="14"
+                        TextColor="White" />
+                </Border>
+
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+</ContentView>

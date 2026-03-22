@@ -1,0 +1,7 @@
+﻿{
+  "FirebaseAuthentication": {
+    "FirebaseApiKey": "AIzaSyCIE5a5xvZrBur0kBTFBHAi0fN5EGWXwgk",
+    "FirebaseAuthDomain": "learn-it-all-mobile-app.firebaseapp.com",
+    "FirebaseDatabaseUrl": "https://learn-it-all-mobile-app-default-rtdb.asia-southeast1.firebasedatabase.app"
+  }
+}

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:components="clr-namespace:Learnitallandroid1.Views.Components"
+    x:Class="Learnitallandroid1.Views.Auth.AuthView"
+    Title="Authentication"
+    Shell.NavBarIsVisible="False"
+    BackgroundColor="Transparent">
+
+    <Grid RowDefinitions="Auto,*">
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="#512BD4" Offset="0.0" />
+                <GradientStop Color="#6A4CFF" Offset="0.45" />
+                <GradientStop Color="#0EA5E9" Offset="1.0" />
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <VerticalStackLayout
+            Padding="24,52,24,24"
+            Spacing="20">
+
+            <VerticalStackLayout Spacing="6">
+                <Label
+                    Text=".NET MAUI"
+                    FontSize="14"
+                    TextColor="#DDE7FF"
+                    FontAttributes="Bold" />
+
+                <Label
+                    Text="Welcome back"
+                    FontSize="32"
+                    FontAttributes="Bold"
+                    TextColor="White" />
+
+                <Label
+                    Text="Sign in or create your account to continue."
+                    FontSize="14"
+                    TextColor="#E8EEFF" />
+            </VerticalStackLayout>
+
+            <Border
+                BackgroundColor="#19FFFFFF"
+                StrokeThickness="0"
+                StrokeShape="RoundRectangle 18"
+                Padding="6">
+
+                <Grid ColumnDefinitions="*,*" ColumnSpacing="8">
+                    <Button
+                        x:Name="LoginTabButton"
+                        Grid.Column="0"
+                        Text="Log In"
+                        Clicked="OnLoginTabClicked"
+                        BackgroundColor="White"
+                        TextColor="#512BD4"
+                        FontAttributes="Bold"
+                        CornerRadius="14"
+                        HeightRequest="48" />
+
+                    <Button
+                        x:Name="RegisterTabButton"
+                        Grid.Column="1"
+                        Text="Sign Up"
+                        Clicked="OnRegisterTabClicked"
+                        BackgroundColor="Transparent"
+                        TextColor="White"
+                        FontAttributes="Bold"
+                        CornerRadius="14"
+                        HeightRequest="48" />
+                </Grid>
+            </Border>
+
+            <Border
+                StrokeThickness="0"
+                BackgroundColor="#F8FAFF"
+                StrokeShape="RoundRectangle 28"
+                Padding="20"
+                Shadow="0,12,28,#30000000">
+
+                <Grid>
+                    <components:LoginComp x:Name="LoginCompView" />
+                    <components:RegisterComp x:Name="RegisterCompView" IsVisible="False" />
+                </Grid>
+            </Border>
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>

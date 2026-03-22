@@ -18,11 +18,17 @@
 
   <ItemGroup>
     <ProjectReference Include="..\LogicLibrary1\LogicLibrary1.csproj" />
-    <ProjectReference Include="..\Models1\Models1.csproj" />
+    <ProjectReference Include="..\ToolsLib1\ToolsLib1.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <Using Include="Xunit" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="test.settings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

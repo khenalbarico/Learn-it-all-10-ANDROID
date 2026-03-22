@@ -79,32 +79,25 @@
 
 	<ItemGroup>
 	  <ProjectReference Include="..\LogicLibrary1\LogicLibrary1.csproj" />
-	  <ProjectReference Include="..\Models1\Models1.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="Views\App\Account.xaml">
+	  <MauiXaml Update="Views\Auth\AuthView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\Components\HamburgerMenu.xaml">
+	  <MauiXaml Update="Views\Components\LoginComp.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\App\Library.xaml">
+	  <MauiXaml Update="Views\Components\RegisterComp.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\App\Purchases.xaml">
+	  <MauiXaml Update="Views\Components\SidebarComp.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\Authentication\LoginRegister.xaml">
+	  <MauiXaml Update="Views\Menu\HomeView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\Authentication\Welcome.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Views\AuthPage1.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Views\LoadingScreen.xaml">
+	  <MauiXaml Update="Views\Menu\IndexView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

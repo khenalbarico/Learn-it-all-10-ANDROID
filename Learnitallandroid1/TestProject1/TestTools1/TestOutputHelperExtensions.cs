@@ -1,11 +1,11 @@
-﻿using Firebase.Auth;
-using Firebase.Auth.Providers;
-using Firebase.Auth.Repository;
+﻿using LogicLibrary1.AppAuth1;
+using LogicLibrary1.AppDb1;
+using LogicLibrary1.AppInit1;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using ToolsLib1.FirebaseClient1;
 using Xunit.Abstractions;
-using LogicLibrary1.FirebaseClient1.AuthenticationHandler1;
-using Models1.Config;
 
 namespace TestProject1.TestTools1;
 
@@ -13,33 +13,31 @@ internal static class TestOutputHelperExtensions
 {
     private static IHost? Host;
 
-    public static T Get<T>(this ITestOutputHelper ctx, Action<IServiceCollection>? svcModifier = null)
+    public static T Get<T>(this ITestOutputHelper ctx)
         where T : class
     {
         Host ??= new HostBuilder()
-            .ConfigureServices(services =>
+            .ConfigureAppConfiguration((context, config) =>
             {
-                services.AddSingleton(_ =>
-                {
-                    var config = new FirebaseAuthConfig
-                    {
-                        ApiKey = "AIzaSyCIE5a5xvZrBur0kBTFBHAi0fN5EGWXwgk",
-                        AuthDomain = "learn-it-all-mobile-app.firebaseapp.com", 
-                        Providers =
-                        [
-                            new EmailProvider()
-                        ],
-                        UserRepository = new FileUserRepository("firebase_auth_cache")
-                    };
+                config.SetBasePath(Directory.GetCurrentDirectory());
+                config.AddJsonFile("test.settings.json");
+            })
+            .ConfigureServices((context, svc) =>
+            {
+                var cfg = context.Configuration;
 
-                    return new FirebaseAuthClient(config);
-                });
+                var appCfg = new AppCfg1();
+                cfg.GetSection("FirebaseAuthentication").Bind(appCfg);
 
-                services.AddSingleton<AuthenticationConfig>();
-                services.AddSingleton<HttpClient>();
-                services.AddSingleton<IFirebaseAuth, Authentication1>();
+                svc.AddSingleton<IFirebaseCfg>(appCfg);
 
-                svcModifier?.Invoke(services);
+                svc.AddSingleton<IAppAuthentication, AppAuthentication1>();
+                svc.AddSingleton<IAppDbOperator, AppDbOperator1>();
+
+                svc.AddHttpClient();
+
+                svc.AddSingleton<IToolAuthEmailProvider,    FirebaseAuth1>();
+                svc.AddSingleton<IToolFirebaseDbOperations, FirebaseRealtimeDb1>();
             })
             .Build();
 

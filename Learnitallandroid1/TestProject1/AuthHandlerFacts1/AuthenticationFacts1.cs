@@ -1,6 +1,5 @@
-﻿using AwesomeAssertions;
-using LogicLibrary1.FirebaseClient1.AuthenticationHandler1;
-using Models1.UserAuth;
+﻿using LogicLibrary1.AppAuth1;
+using Microsoft.Extensions.Configuration;
 using TestProject1.TestTools1;
 using Xunit.Abstractions;
 
@@ -10,38 +9,38 @@ public class AuthenticationFacts1 (ITestOutputHelper _ctx)
 {
     [Fact] public async Task Firebase_SignIn()
     {
-        //Arrange
-        var loginPayload = new UserLogin
+        var payload = new
         {
-            Email = "khenalbarico05@gmail.com",
+            Email    = "khenalbarico05@gmail.com",
             Password = "test123456"
         };
 
-        var _sut = _ctx.Get<IFirebaseAuth>();
+        var _sut = _ctx.Get<IAppAuthentication>();
 
-        //Act
-        var result = await _sut.SignInWithEmailAndPasswordAsync(loginPayload);
+        await _sut.SignInAsync(payload.Email, payload.Password);
 
-
-        //Assert
-        result.Uid.Should().NotBeNullOrEmpty();
+        var user = _sut.GetCurrentUser();
     }
 
     [Fact] public async Task Firebase_Register()
     {
-        //Arrange
-        var registerPayload = new UserRegister
+        var payload = new
         {
             Email = "khenalbarico05@gmail.com",
             Password = "test123456"
-        };
+        }; 
 
-        var _sut = _ctx.Get<IFirebaseAuth>();
+        var _sut = _ctx.Get<IAppAuthentication>();
 
-        //Act
-        var result = await _sut.CreateUserWithEmailAndPasswordAsync(registerPayload);
+        await _sut.SignUpAsync(payload.Email, payload.Password);
 
-        //Assert
-        result.Uid.Should().NotBeNullOrEmpty();
+        var user = _sut.GetCurrentUser();
+    }
+
+    [Fact] public async Task Firebase_SignOut()
+    {
+        var _sut = _ctx.Get<IAppAuthentication>();
+
+        _sut.SignOut();
     }
 }

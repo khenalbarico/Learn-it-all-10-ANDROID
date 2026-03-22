@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Learnitallandroid1.Views.Components.LoginComp">
+
+    <VerticalStackLayout Spacing="16">
+
+        <Label
+            Text="Login"
+            FontSize="24"
+            FontAttributes="Bold"
+            TextColor="#111827" />
+
+        <Label
+            Text="Use your verified Firebase account."
+            FontSize="13"
+            TextColor="#6B7280" />
+
+        <VerticalStackLayout Spacing="10">
+            <Label Text="Email" FontAttributes="Bold" TextColor="#374151" />
+            <Border Stroke="#D1D5DB" StrokeShape="RoundRectangle 14" BackgroundColor="White">
+                <Entry
+                    x:Name="EmailEntry"
+                    Placeholder="you@example.com"
+                    Keyboard="Email"
+                    Margin="14,10" />
+            </Border>
+        </VerticalStackLayout>
+
+        <VerticalStackLayout Spacing="10">
+            <Label Text="Password" FontAttributes="Bold" TextColor="#374151" />
+            <Border Stroke="#D1D5DB" StrokeShape="RoundRectangle 14" BackgroundColor="White">
+                <Entry
+                    x:Name="PasswordEntry"
+                    Placeholder="Enter your password"
+                    IsPassword="True"
+                    Margin="14,10" />
+            </Border>
+        </VerticalStackLayout>
+
+        <Button
+            Text="Log In"
+            Clicked="OnLoginClicked"
+            HeightRequest="52"
+            CornerRadius="16"
+            FontAttributes="Bold"
+            BackgroundColor="#512BD4"
+            TextColor="White" />
+
+        <ActivityIndicator x:Name="BusyIndicator" IsVisible="False" IsRunning="False" />
+
+        <Label
+            x:Name="MessageLabel"
+            Text=""
+            FontSize="13"
+            TextColor="#DC2626" />
+    </VerticalStackLayout>
+</ContentView>

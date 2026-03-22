@@ -1,6 +1,6 @@
-﻿using LogicLibrary1.Initializers1;
+﻿using LogicLibrary1;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
-
 
 namespace Learnitallandroid1;
 
@@ -18,13 +18,11 @@ public static class MauiProgram
                 fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
             });
 
-        using var stream = FileSystem.OpenAppPackageFileAsync("appsettings.json")
-            .GetAwaiter()
-            .GetResult();
+        using var stream = FileSystem.OpenAppPackageFileAsync("appsettings.json").GetAwaiter().GetResult();
+        builder.Configuration.AddJsonStream(stream);
 
-        var authConfig = ConfigLoader1.LoadAuthenticationConfig(stream);
-
-        builder.Services.AddSingleton(authConfig);
+        builder.Services.AddSvcRegistry(builder.Configuration);
+        builder.Services.AddViewsRegistry();
 
 #if DEBUG
         builder.Logging.AddDebug();

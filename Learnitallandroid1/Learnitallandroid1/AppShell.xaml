@@ -3,12 +3,16 @@
     x:Class="Learnitallandroid1.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:views="clr-namespace:Learnitallandroid1.Views.Authentication"
-    xmlns:local="clr-namespace:Learnitallandroid1"
+    xmlns:views="clr-namespace:Learnitallandroid1.Views.Auth"
+    xmlns:menuViews="clr-namespace:Learnitallandroid1.Views.Menu"
+    Shell.FlyoutBehavior="Disabled"
     Title="Learnitallandroid1">
 
     <ShellContent
-        Route="Welcome"
-        ContentTemplate="{DataTemplate views:Welcome}" />
+        Route="AuthView"
+        ContentTemplate="{DataTemplate views:AuthView}" />
 
+    <ShellContent
+        Route="IndexView"
+        ContentTemplate="{DataTemplate menuViews:IndexView}" />
 </Shell>

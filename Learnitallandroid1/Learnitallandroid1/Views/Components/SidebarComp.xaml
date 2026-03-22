@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Learnitallandroid1.Views.Components.SidebarComp"
+    WidthRequest="280"
+    BackgroundColor="Transparent">
+
+    <Grid
+        Padding="18"
+        RowDefinitions="Auto,*,Auto"
+        BackgroundColor="Transparent">
+
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="#512BD4" Offset="0.0" />
+                <GradientStop Color="#6A4CFF" Offset="0.45" />
+                <GradientStop Color="#0EA5E9" Offset="1.0" />
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <VerticalStackLayout Spacing="6">
+            <Label
+                Text=".NET MAUI"
+                FontSize="14"
+                FontAttributes="Bold"
+                TextColor="#DDE7FF" />
+
+            <Label
+                Text="LearnitAll"
+                FontSize="28"
+                FontAttributes="Bold"
+                TextColor="White" />
+
+            <Label
+                Text="Mobile sidebar menu"
+                FontSize="13"
+                TextColor="#E8EEFF" />
+        </VerticalStackLayout>
+
+        <VerticalStackLayout
+            Grid.Row="1"
+            Margin="0,28,0,0"
+            Spacing="12">
+
+            <Button
+                x:Name="HomeButton"
+                Text="Home"
+                Clicked="OnHomeClicked"
+                BackgroundColor="White"
+                TextColor="#512BD4"
+                FontAttributes="Bold"
+                CornerRadius="16"
+                HeightRequest="50" />
+        </VerticalStackLayout>
+
+        <Border
+            Grid.Row="2"
+            BackgroundColor="#19FFFFFF"
+            StrokeThickness="0"
+            StrokeShape="RoundRectangle 18"
+            Padding="14">
+
+            <Label
+                Text="More menu items can be added here later."
+                FontSize="13"
+                TextColor="White" />
+        </Border>
+    </Grid>
+</ContentView>
