@@ -2,7 +2,6 @@
 <ContentPage
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:components="clr-namespace:Learnitallandroid1.Views.Components"
     xmlns:menu="clr-namespace:Learnitallandroid1.Views.Menu"
     x:Class="Learnitallandroid1.Views.Menu.IndexView"
     Title="Index"
@@ -12,7 +11,8 @@
     <Grid>
 
         <Grid x:Name="ContentHost">
-            <menu:HomeView x:Name="HomeContentView" />
+            <menu:HomeView x:Name="HomeContentView" IsVisible="True" />
+            <menu:LibraryView x:Name="LibraryContentView" IsVisible="False" />
         </Grid>
 
         <Grid Padding="16,45,16,0"
@@ -33,31 +33,31 @@
         </Grid>
 
         <Grid
-    x:Name="SidebarOverlay"
-    IsVisible="False"
-    InputTransparent="False"
-    BackgroundColor="Transparent"
-    ColumnDefinitions="280,*">
+            x:Name="SidebarOverlay"
+            IsVisible="False"
+            InputTransparent="False"
+            BackgroundColor="Transparent"
+            ColumnDefinitions="280,*">
 
             <Border
-        x:Name="SidebarContainer"
-        Grid.Column="0"
-        StrokeThickness="0"
-        BackgroundColor="Transparent"
-        TranslationX="-280"
-        HorizontalOptions="Start"
-        VerticalOptions="Fill"
-        ZIndex="2">
+                x:Name="SidebarContainer"
+                Grid.Column="0"
+                StrokeThickness="0"
+                BackgroundColor="Transparent"
+                TranslationX="-280"
+                HorizontalOptions="Start"
+                VerticalOptions="Fill"
+                ZIndex="2">
 
-                <components:SidebarComp x:Name="SidebarView" />
+                <ContentView x:Name="SidebarHost" />
             </Border>
 
             <Grid
-        x:Name="BackdropArea"
-        Grid.Column="1"
-        BackgroundColor="#66000000"
-        Opacity="0"
-        ZIndex="1">
+                x:Name="BackdropArea"
+                Grid.Column="1"
+                BackgroundColor="#66000000"
+                Opacity="0"
+                ZIndex="1">
                 <Grid.GestureRecognizers>
                     <TapGestureRecognizer Tapped="OnBackdropTapped" />
                 </Grid.GestureRecognizers>

@@ -1,76 +1,63 @@
+using Learnitallandroid1.Views.Components;
+
 namespace Learnitallandroid1.Views.Menu;
 
 public partial class IndexView : ContentPage
 {
-    private bool _isSidebarOpen;
+    readonly SidebarComp _sidebarComp;
 
-    public IndexView()
+    public IndexView(SidebarComp sidebarComp)
     {
         InitializeComponent();
 
-        SidebarView.MenuSelected += OnMenuSelected;
-        SidebarView.SetActiveMenu("Home");
-        ShowView("Home");
+        _sidebarComp = sidebarComp;
+        SidebarHost.Content = _sidebarComp;
+
+        _sidebarComp.MenuSelected += OnMenuSelected;
+        _sidebarComp.SetActiveMenu("Home");
+    }
+
+    private async void OnMenuSelected(object? sender, string menu)
+    {
+        if (menu == "Home")
+        {
+            HomeContentView.IsVisible = true;
+            LibraryContentView.IsVisible = false;
+        }
+        else if (menu == "Library")
+        {
+            HomeContentView.IsVisible = false;
+            LibraryContentView.IsVisible = true;
+        }
+        else if (menu == "SignOut")
+        {
+            await Shell.Current.GoToAsync("//AuthView");
+        }
+
+        await CloseSidebar();
     }
 
     private async void OnMenuButtonClicked(object sender, EventArgs e)
     {
-        if (_isSidebarOpen)
-            await CloseSidebarAsync();
-        else
-            await OpenSidebarAsync();
+        SidebarOverlay.IsVisible = true;
+        await Task.WhenAll(
+            SidebarContainer.TranslateTo(0, 0, 250, Easing.CubicOut),
+            BackdropArea.FadeTo(1, 250, Easing.CubicOut)
+        );
     }
 
     private async void OnBackdropTapped(object sender, TappedEventArgs e)
     {
-        await CloseSidebarAsync();
+        await CloseSidebar();
     }
 
-    private async void OnMenuSelected(object? sender, string menuKey)
+    private async Task CloseSidebar()
     {
-        ShowView(menuKey);
-        await CloseSidebarAsync();
-    }
-
-    private void ShowView(string menuKey)
-    {
-        switch (menuKey)
-        {
-            case "Home":
-            default:
-                HomeContentView.IsVisible = true;
-                break;
-        }
-    }
-
-    private async Task OpenSidebarAsync()
-    {
-        if (_isSidebarOpen)
-            return;
-
-        _isSidebarOpen = true;
-        SidebarOverlay.IsVisible = true;
-
-        SidebarContainer.TranslationX = -280;
-        BackdropArea.Opacity = 0;
-
         await Task.WhenAll(
-            SidebarContainer.TranslateTo(0, 0, 220, Easing.CubicOut),
-            BackdropArea.FadeTo(1, 180, Easing.CubicOut)
-        );
-    }
-
-    private async Task CloseSidebarAsync()
-    {
-        if (!_isSidebarOpen)
-            return;
-
-        await Task.WhenAll(
-            SidebarContainer.TranslateTo(-280, 0, 220, Easing.CubicIn),
-            BackdropArea.FadeTo(0, 180, Easing.CubicIn)
+            SidebarContainer.TranslateTo(-280, 0, 250, Easing.CubicIn),
+            BackdropArea.FadeTo(0, 250, Easing.CubicIn)
         );
 
         SidebarOverlay.IsVisible = false;
-        _isSidebarOpen = false;
     }
 }

@@ -52,19 +52,51 @@
                 FontAttributes="Bold"
                 CornerRadius="16"
                 HeightRequest="50" />
+
+            <Button
+                x:Name="LibraryButton"
+                Text="Library"
+                Clicked="OnLibraryClicked"
+                BackgroundColor="Transparent"
+                TextColor="White"
+                FontAttributes="Bold"
+                CornerRadius="16"
+                HeightRequest="50" />
         </VerticalStackLayout>
 
-        <Border
+        <VerticalStackLayout
             Grid.Row="2"
-            BackgroundColor="#19FFFFFF"
-            StrokeThickness="0"
-            StrokeShape="RoundRectangle 18"
-            Padding="14">
+            Spacing="12">
 
-            <Label
-                Text="More menu items can be added here later."
-                FontSize="13"
-                TextColor="White" />
-        </Border>
+            <Border
+                BackgroundColor="#19FFFFFF"
+                StrokeThickness="0"
+                StrokeShape="RoundRectangle 18"
+                Padding="14">
+
+                <Label
+                    Text="More menu items can be added here later."
+                    FontSize="13"
+                    TextColor="White" />
+            </Border>
+
+            <Button
+                Text="Sign Out"
+                Clicked="OnSignOutClicked"
+                FontAttributes="Bold"
+                HeightRequest="50"
+                CornerRadius="18"
+                TextColor="White">
+
+                <Button.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Color="#FF4D4D" Offset="0.0" />
+                        <GradientStop Color="#DC2626" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+
+        </VerticalStackLayout>
+
     </Grid>
 </ContentView>

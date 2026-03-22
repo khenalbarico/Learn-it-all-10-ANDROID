@@ -1,6 +1,7 @@
 ﻿using Learnitallandroid1.Views.Auth;
 using Learnitallandroid1.Views.Components;
 using Learnitallandroid1.Views.Menu;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Learnitallandroid1;
 
@@ -16,6 +17,7 @@ internal static class ViewsRegistry
 
         svc.AddTransient<IndexView>();
         svc.AddTransient<HomeView>();
+        svc.AddTransient<LibraryView>();
         svc.AddTransient<SidebarComp>();
     }
 }
