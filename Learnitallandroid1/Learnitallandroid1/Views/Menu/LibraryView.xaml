@@ -2,6 +2,7 @@
 <ContentView
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:model="clr-namespace:LogicLibrary1.AppBookInit1;assembly=LogicLibrary1"
     x:Class="Learnitallandroid1.Views.Menu.LibraryView">
 
     <Grid>
@@ -50,7 +51,7 @@
                             TextColor="#111827" />
 
                         <Label
-                            Text="This section can display your books, documents, courses, or any learning content while keeping the same full-screen layout."
+                            Text="Your books are displayed below in card frames like a modern book app."
                             FontSize="14"
                             TextColor="#4B5563" />
                     </VerticalStackLayout>
@@ -60,13 +61,127 @@
                     BackgroundColor="#19FFFFFF"
                     StrokeThickness="0"
                     StrokeShape="RoundRectangle 24"
-                    Padding="18">
+                    Padding="18"
+                    IsVisible="{Binding HasNoBooks}">
 
                     <Label
-                        Text="Use this page to organize and access all your learning resources."
+                        Text="No books found in your library yet."
                         FontSize="14"
                         TextColor="White" />
                 </Border>
+
+                <CollectionView
+                    ItemsSource="{Binding CachedBooks}"
+                    SelectionMode="None"
+                    IsVisible="{Binding HasBooks}">
+
+                    <CollectionView.ItemsLayout>
+                        <LinearItemsLayout Orientation="Vertical" ItemSpacing="16" />
+                    </CollectionView.ItemsLayout>
+
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate x:DataType="model:BooksResultAll1">
+                            <Border
+                                BackgroundColor="White"
+                                StrokeThickness="0"
+                                StrokeShape="RoundRectangle 24"
+                                Padding="14"
+                                Shadow="0,10,24,#22000000">
+
+                                <Grid ColumnDefinitions="100,*" ColumnSpacing="14">
+
+                                    <Border
+                                        WidthRequest="100"
+                                        HeightRequest="145"
+                                        StrokeThickness="0"
+                                        StrokeShape="RoundRectangle 18"
+                                        BackgroundColor="#EDE9FE"
+                                        VerticalOptions="Start">
+
+                                        <Grid>
+                                            <Image
+                                                Source="{Binding DriveUrl}"
+                                                Aspect="AspectFill" />
+
+                                            <Grid
+                                                BackgroundColor="#70000000"
+                                                VerticalOptions="End"
+                                                Padding="8">
+
+                                                <Label
+                                                    Text="{Binding Title}"
+                                                    FontSize="12"
+                                                    FontAttributes="Bold"
+                                                    TextColor="White"
+                                                    MaxLines="2"
+                                                    LineBreakMode="TailTruncation" />
+                                            </Grid>
+                                        </Grid>
+                                    </Border>
+
+                                    <VerticalStackLayout
+                                        Grid.Column="1"
+                                        Spacing="8"
+                                        VerticalOptions="Center">
+
+                                        <HorizontalStackLayout Spacing="8">
+                                            <Border
+                                                BackgroundColor="#EEF2FF"
+                                                StrokeThickness="0"
+                                                StrokeShape="RoundRectangle 12"
+                                                Padding="10,5">
+                                                <Label
+                                                    Text="{Binding Classification}"
+                                                    FontSize="12"
+                                                    FontAttributes="Bold"
+                                                    TextColor="#4338CA" />
+                                            </Border>
+
+                                            <Border
+                                                BackgroundColor="#ECFEFF"
+                                                StrokeThickness="0"
+                                                StrokeShape="RoundRectangle 12"
+                                                Padding="10,5">
+                                                <Label
+                                                    Text="{Binding Topic}"
+                                                    FontSize="12"
+                                                    FontAttributes="Bold"
+                                                    TextColor="#0F766E" />
+                                            </Border>
+                                        </HorizontalStackLayout>
+
+                                        <Label
+                                            Text="{Binding Title}"
+                                            FontSize="18"
+                                            FontAttributes="Bold"
+                                            TextColor="#111827"
+                                            MaxLines="2"
+                                            LineBreakMode="TailTruncation" />
+
+                                        <Label
+                                            Text="{Binding Course, StringFormat='Course: {0}'}"
+                                            FontSize="13"
+                                            TextColor="#4B5563"
+                                            MaxLines="1"
+                                            LineBreakMode="TailTruncation" />
+
+                                        <Label
+                                            Text="{Binding Description}"
+                                            FontSize="13"
+                                            TextColor="#6B7280"
+                                            MaxLines="3"
+                                            LineBreakMode="TailTruncation" />
+
+                                        <Label
+                                            Text="{Binding Uid, StringFormat='Book ID: {0}'}"
+                                            FontSize="11"
+                                            TextColor="#9CA3AF" />
+                                    </VerticalStackLayout>
+                                </Grid>
+                            </Border>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
 
             </VerticalStackLayout>
         </ScrollView>

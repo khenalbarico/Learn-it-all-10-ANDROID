@@ -4,6 +4,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:menu="clr-namespace:Learnitallandroid1.Views.Menu"
     x:Class="Learnitallandroid1.Views.Menu.IndexView"
+    x:Name="ThisPage"
     Title="Index"
     Shell.NavBarIsVisible="False"
     BackgroundColor="Transparent">
@@ -12,7 +13,7 @@
 
         <Grid x:Name="ContentHost">
             <menu:HomeView x:Name="HomeContentView" IsVisible="True" />
-            <menu:LibraryView x:Name="LibraryContentView" IsVisible="False" />
+            <menu:LibraryView x:Name="LibraryContentView" IsVisible="False" BindingContext="{Binding Source={x:Reference ThisPage}}" />
         </Grid>
 
         <Grid Padding="16,45,16,0"
