@@ -11,9 +11,9 @@
     <Grid RowDefinitions="Auto,*">
         <Grid.Background>
             <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-                <GradientStop Color="#512BD4" Offset="0.0" />
-                <GradientStop Color="#6A4CFF" Offset="0.45" />
-                <GradientStop Color="#0EA5E9" Offset="1.0" />
+                <GradientStop Color="#F97316" Offset="0.0" />
+                <GradientStop Color="#FB923C" Offset="0.45" />
+                <GradientStop Color="#FDBA74" Offset="1.0" />
             </LinearGradientBrush>
         </Grid.Background>
 
@@ -25,7 +25,7 @@
                 <Label
                     Text=".NET MAUI"
                     FontSize="14"
-                    TextColor="#DDE7FF"
+                    TextColor="#FFF7ED"
                     FontAttributes="Bold" />
 
                 <Label
@@ -37,7 +37,7 @@
                 <Label
                     Text="Sign in or create your account to continue."
                     FontSize="14"
-                    TextColor="#E8EEFF" />
+                    TextColor="#FFEDD5" />
             </VerticalStackLayout>
 
             <Border
@@ -53,7 +53,7 @@
                         Text="Log In"
                         Clicked="OnLoginTabClicked"
                         BackgroundColor="White"
-                        TextColor="#512BD4"
+                        TextColor="#F97316"
                         FontAttributes="Bold"
                         CornerRadius="14"
                         HeightRequest="48" />

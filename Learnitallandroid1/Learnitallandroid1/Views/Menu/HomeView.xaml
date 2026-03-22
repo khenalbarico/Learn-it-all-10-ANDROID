@@ -7,9 +7,9 @@
     <Grid>
         <Grid.Background>
             <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-                <GradientStop Color="#512BD4" Offset="0.0" />
-                <GradientStop Color="#6A4CFF" Offset="0.45" />
-                <GradientStop Color="#0EA5E9" Offset="1.0" />
+                <GradientStop Color="#F97316" Offset="0.0" />
+                <GradientStop Color="#FB923C" Offset="0.45" />
+                <GradientStop Color="#FDBA74" Offset="1.0" />
             </LinearGradientBrush>
         </Grid.Background>
 
@@ -21,7 +21,7 @@
                         Text=".NET MAUI"
                         FontSize="14"
                         FontAttributes="Bold"
-                        TextColor="#DDE7FF" />
+                        TextColor="#FFF7ED" />
 
                     <Label
                         Text="Home"
@@ -32,7 +32,7 @@
                     <Label
                         Text="This is your full-screen mobile home view."
                         FontSize="14"
-                        TextColor="#E8EEFF" />
+                        TextColor="#FFEDD5" />
                 </VerticalStackLayout>
 
                 <Border

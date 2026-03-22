@@ -8,9 +8,9 @@
     <Grid>
         <Grid.Background>
             <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-                <GradientStop Color="#512BD4" Offset="0.0" />
-                <GradientStop Color="#6A4CFF" Offset="0.45" />
-                <GradientStop Color="#0EA5E9" Offset="1.0" />
+                <GradientStop Color="#F97316" Offset="0.0" />
+                <GradientStop Color="#FB923C" Offset="0.45" />
+                <GradientStop Color="#FDBA74" Offset="1.0" />
             </LinearGradientBrush>
         </Grid.Background>
 
@@ -22,7 +22,7 @@
                         Text=".NET MAUI"
                         FontSize="14"
                         FontAttributes="Bold"
-                        TextColor="#DDE7FF" />
+                        TextColor="#FFF7ED" />
 
                     <Label
                         Text="Library"
@@ -33,7 +33,7 @@
                     <Label
                         Text="Browse your saved lessons, materials, and resources."
                         FontSize="14"
-                        TextColor="#E8EEFF" />
+                        TextColor="#FFEDD5" />
                 </VerticalStackLayout>
 
                 <Border
@@ -95,7 +95,7 @@
                                         HeightRequest="145"
                                         StrokeThickness="0"
                                         StrokeShape="RoundRectangle 18"
-                                        BackgroundColor="#EDE9FE"
+                                        BackgroundColor="#FFF7ED"
                                         VerticalOptions="Start">
 
                                         <Grid>
@@ -126,7 +126,7 @@
 
                                         <HorizontalStackLayout Spacing="8">
                                             <Border
-                                                BackgroundColor="#EEF2FF"
+                                                BackgroundColor="#FFEDD5"
                                                 StrokeThickness="0"
                                                 StrokeShape="RoundRectangle 12"
                                                 Padding="10,5">
@@ -134,11 +134,11 @@
                                                     Text="{Binding Classification}"
                                                     FontSize="12"
                                                     FontAttributes="Bold"
-                                                    TextColor="#4338CA" />
+                                                    TextColor="#C2410C" />
                                             </Border>
 
                                             <Border
-                                                BackgroundColor="#ECFEFF"
+                                                BackgroundColor="#FED7AA"
                                                 StrokeThickness="0"
                                                 StrokeShape="RoundRectangle 12"
                                                 Padding="10,5">
@@ -146,7 +146,7 @@
                                                     Text="{Binding Topic}"
                                                     FontSize="12"
                                                     FontAttributes="Bold"
-                                                    TextColor="#0F766E" />
+                                                    TextColor="#9A3412" />
                                             </Border>
                                         </HorizontalStackLayout>
 

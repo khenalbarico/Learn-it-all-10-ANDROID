@@ -13,9 +13,9 @@
 
         <Grid.Background>
             <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-                <GradientStop Color="#512BD4" Offset="0.0" />
-                <GradientStop Color="#6A4CFF" Offset="0.45" />
-                <GradientStop Color="#0EA5E9" Offset="1.0" />
+                <GradientStop Color="#F97316" Offset="0.0" />
+                <GradientStop Color="#FB923C" Offset="0.45" />
+                <GradientStop Color="#FDBA74" Offset="1.0" />
             </LinearGradientBrush>
         </Grid.Background>
 
@@ -24,7 +24,7 @@
                 Text=".NET MAUI"
                 FontSize="14"
                 FontAttributes="Bold"
-                TextColor="#DDE7FF" />
+                TextColor="#FFF7ED" />
 
             <Label
                 Text="LearnitAll"
@@ -35,7 +35,7 @@
             <Label
                 Text="Mobile sidebar menu"
                 FontSize="13"
-                TextColor="#E8EEFF" />
+                TextColor="#FFEDD5" />
         </VerticalStackLayout>
 
         <VerticalStackLayout
@@ -48,7 +48,7 @@
                 Text="Home"
                 Clicked="OnHomeClicked"
                 BackgroundColor="White"
-                TextColor="#512BD4"
+                TextColor="#F97316"
                 FontAttributes="Bold"
                 CornerRadius="16"
                 HeightRequest="50" />

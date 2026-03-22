@@ -45,7 +45,7 @@
             HeightRequest="52"
             CornerRadius="16"
             FontAttributes="Bold"
-            BackgroundColor="#512BD4"
+            BackgroundColor="#F97316"
             TextColor="White" />
 
         <ActivityIndicator x:Name="BusyIndicator" IsVisible="False" IsRunning="False" />
